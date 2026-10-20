@@ -9,7 +9,7 @@ always @(*) begin
     valid = 1'b0;
 
     if (a[7]) begin
-        y     = 3'b111;
+        y     = 3'b111; 
         valid = 1'b1;
     end
     else if (a[6]) begin

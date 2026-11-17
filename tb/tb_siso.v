@@ -61,9 +61,6 @@ initial begin
     $finish;
 end
 
-initial begin
-    $dumpfile("siso_shift_register.vcd");
-    $dumpvars(0,tb_siso_shift_register);
-end
+
 
 endmodule

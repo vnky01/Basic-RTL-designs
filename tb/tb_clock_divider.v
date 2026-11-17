@@ -29,9 +29,5 @@ initial begin
     $finish;
 end
 
-initial begin
-    $dumpfile("clock_div5_50.vcd");
-    $dumpvars(0, tb_clock_div5_50);
-end
 
 endmodule

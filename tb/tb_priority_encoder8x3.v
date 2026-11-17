@@ -56,9 +56,5 @@ initial begin
     $finish;
 end
 
-initial begin
-    $dumpfile("priority_encoder.vcd");
-    $dumpvars(0,tb_priority_encoder_8to3);
-end
 
 endmodule

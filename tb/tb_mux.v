@@ -1,0 +1,49 @@
+module tb_mux;
+
+reg a,b,s;
+wire y;
+
+mux dut (
+    .a(a),
+    .b(b),
+    .s(s),
+    .y(y)
+);
+
+initial begin
+    $monitor("Time=%0t | A=%b B=%b S=%b | Y=%b",
+              $time,a,b,s,y);
+
+    a=0; b=0; s=0;
+    #10;
+
+    a=0; b=1; s=0;
+    #10;
+
+    a=1; b=0; s=0;
+    #10;
+
+    a=1; b=1; s=0;
+    #10;
+
+    a=0; b=0; s=1;
+    #10;
+
+    a=0; b=1; s=1;
+    #10;
+
+    a=1; b=0; s=1;
+    #10;
+
+    a=1; b=1; s=1;
+    #10;
+
+    $finish;
+end
+
+initial begin
+    $dumpfile("mux.vcd");
+    $dumpvars(0,tb_mux);
+end
+
+endmodule

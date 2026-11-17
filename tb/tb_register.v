@@ -51,9 +51,6 @@ initial begin
     $finish;
 end
 
-initial begin
-    $dumpfile("register.vcd");
-    $dumpvars(0,tb_register);
-end
+
 
 endmodule

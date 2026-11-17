@@ -41,9 +41,5 @@ initial begin
     $finish;
 end
 
-initial begin
-    $dumpfile("mux.vcd");
-    $dumpvars(0,tb_mux);
-end
 
 endmodule

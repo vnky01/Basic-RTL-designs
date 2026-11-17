@@ -50,9 +50,6 @@ initial begin
     $finish;
 end
 
-initial begin
-    $dumpfile("encoder_8to3.vcd");
-    $dumpvars(0,tb_encoder_8to3);
-end
+
 
 endmodule

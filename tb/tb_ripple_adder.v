@@ -44,9 +44,6 @@ initial begin
     $finish;
 end
 
-initial begin
-    $dumpfile("ripple_adder.vcd");
-    $dumpvars(0,tb_ripple_adder);
-end
+
 
 endmodule

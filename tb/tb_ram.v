@@ -65,9 +65,6 @@ initial begin
     $finish;
 end
 
-initial begin
-    $dumpfile("single_port_ram.vcd");
-    $dumpvars(0,tb_single_port_ram);
-end
+
 
 endmodule
